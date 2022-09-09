@@ -35,6 +35,36 @@
 - use wayback machine to check for API docs
 - here you might find old endpoints that are still available and are just remove from the docs
 
+
+## Active recon
+
+### nmap -> scan target
+1. scan defaults: `nmap -sC -sV <target_ip>`
+2. scan all ports: `nmap -p- <target_ip`
+3. scan specific ports `nmap -sV <target_ip> -p <port>`
+4. Check the service under the port via browser
+
+### amass -> get potential api entries
+
+1. get sources with: `amass enum -list`
+2. search with: `amass enum -d <target_domain/ip> | grep api`
+
+### gobuster -> directory brute force (non-api related)
+
+(maybe get an api wordlist for this)
+1. root check: `gobuster dir -u <target>:<port> -w /usr/share/wordlists/dirbuster/<wordlist> --wildcard -b 200`
+2. specific check `gobuster dir -u <target_domain>:<port>/<path> -w /usr/share/wordlists/dirbuster/<wordlist>`
+3. use `-b <status_code>` to filter out unwanted results e.g. 401, 200, etc.
+4. use `--wildcard` to scan all
+
+### Browser dev tools (F12 key)
+
+1. Network Manager to see where requests are going. Maybe filter by XHR
+2. Add the URL column, if not there
+3. search for `api`
+
+**Tip**: Import a request via cURL. Right click on a request in the network tab. Switch to Postman, click import -> Raw text and paste the cURL request in
+
 ## Test Flow
 
 - Opting in
