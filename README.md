@@ -11,14 +11,14 @@
 
 ### Useful google dorks
 
-- `intitle:"api" site:<target_domain>`
-- `inurl:"api/v1" site:<target_domain>`
-- `intitle:json site:<target_domain>`
+- `intitle:"api" site:example.com`
+- `inurl:"api/v1" site:example.com`
+- `intitle:json site:example.com`
 
 ### useful github dorks
 
 - search for api keys e.g. `api keys exposed` -> issue search
-- `exension:json <target>` -> repository search
+- `exension:json {username}` -> repository search
 - search for naming of api keys, e.g.: `shodan_api_key` -> repos, issues, discussion
 - search for common headers `"authorization: Bearer"`
 - search for swagger file `filename:swagger.json`
@@ -26,8 +26,8 @@
 ### shodan dorks
 
 - generic search
-- search for ports `port:<port>`
-- `<target> "content-type: application/json"`
+- search for ports `port:{port}`
+- `example.com "content-type: application/json"`
 - `wp-json` for wordpress APIs
 
 ### wayback machine
@@ -41,9 +41,9 @@
 ### scan target
 
 #### nmap
-1. scan defaults: `nmap -sC -sV <target_ip>`
-2. scan all ports: `nmap -p- <target_ip`
-3. scan specific ports `nmap -sV <target_ip> -p <port>`
+1. scan defaults: `nmap -sC -sV {target_ip}`
+2. scan all ports: `nmap -p- {target_ip}`
+3. scan specific ports `nmap -sV {target_ip} -p {port}`
 4. Check the service under the port via browser
 
 #### nikto
