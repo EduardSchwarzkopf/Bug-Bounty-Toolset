@@ -62,7 +62,7 @@ Check for missing headers, when it comes to APIs
 7. Use the app all features of the app
 8. On the right site, start an active scan (ressource heavy)
 9. Go back to Zap
-10. On right site, right-click on the target folder -> Include in Context -> target_url -> Ok
+10. On right site, right-click on the target folder -> Add new Context -> Ok
 11. Click on the small target icon in the top left corner, to have a better overview
 
 To skip certain scans, click on the small health monitor icon in the middle next to the progress bar and disable scans you don't want. E.g. SOAP Action Spoofing, SOAP XML Injection, Script Active Scan Rules
