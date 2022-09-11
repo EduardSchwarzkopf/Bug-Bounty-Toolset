@@ -38,11 +38,17 @@
 
 ## Active recon
 
-### nmap -> scan target
+### scan target
+
+#### nmap
 1. scan defaults: `nmap -sC -sV <target_ip>`
 2. scan all ports: `nmap -p- <target_ip`
 3. scan specific ports `nmap -sV <target_ip> -p <port>`
 4. Check the service under the port via browser
+
+#### nikto
+Scan with nikto to check for missconfigurations: `nikto -h http://example.com`
+Check for missing headers, when it comes to APIs
 
 ### amass -> get potential api entries
 
