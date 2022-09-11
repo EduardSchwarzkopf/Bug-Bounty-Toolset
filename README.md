@@ -56,13 +56,14 @@ Check for missing headers, when it comes to APIs
 1. Manual Explorer
 2. Add URL
 3. Click Launch Browser
-4. Click on Continue to your target
-5. On the right site, start the attack mode
-6. Use the app all features of the app
-7. On the right site, start an active scan (ressource heavy)
-8. Go back to Zap
-9. On right site, right-click on the target folder -> Include in Context -> target_url -> Ok
-10. Click on the small target icon in the top left corner, to have a better overview
+4. Click on the shield icon next to the url and turn off "Enhanced Tracking Protection"
+5. Click on Continue to your target
+6. On the right site, start the attack mode
+7. Use the app all features of the app
+8. On the right site, start an active scan (ressource heavy)
+9. Go back to Zap
+10. On right site, right-click on the target folder -> Include in Context -> target_url -> Ok
+11. Click on the small target icon in the top left corner, to have a better overview
 
 To skip certain scans, click on the small health monitor icon in the middle next to the progress bar and disable scans you don't want. E.g. SOAP Action Spoofing, SOAP XML Injection, Script Active Scan Rules
 
