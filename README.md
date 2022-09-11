@@ -50,12 +50,30 @@
 Scan with nikto to check for missconfigurations: `nikto -h http://example.com`
 Check for missing headers, when it comes to APIs
 
-### amass -> get potential api entries
+
+#### OWASP Zap
+
+1. Manual Explorer
+2. Add URL
+3. Click Launch Browser
+4. Click on Continue to your target
+5. On the right site, start the attack mode
+6. Use the app all features of the app
+7. On the right site, start an active scan (ressource heavy)
+8. Go back to Zap
+9. On right site, right-click on the target folder -> Include in Context -> target_url -> Ok
+10. Click on the small target icon in the top left corner, to have a better overview
+
+To skip certain scans, click on the small health monitor icon in the middle next to the progress bar and disable scans you don't want. E.g. SOAP Action Spoofing, SOAP XML Injection, Script Active Scan Rules
+
+Review the results under **Alerts** tab. Select the alert and check the request and response, if it is a valid alert.
+
+#### amass -> get potential api entries
 
 1. get sources with: `amass enum -list`
 2. search with: `amass enum -d <target_domain/ip> | grep api`
 
-### gobuster -> directory brute force (non-api related)
+#### gobuster -> directory brute force (non-api related)
 
 (maybe get an api wordlist for this)
 1. root check: `gobuster dir -u <target>:<port> -w /usr/share/wordlists/dirbuster/<wordlist> --wildcard -b 200`
