@@ -55,6 +55,22 @@
 - `v`	Verbose mode
 - `sU`	UDP port scan
 - `sS`	TCP SYN port scan
+  
+  
+#### gobuster
+
+GoBuster is a tool used to brute-force URIs (directories and files), DNS subdomains and virtual host names. For this machine, we will focus on using it to brute-force directories.
+
+Usage: `gobuster dir -u http://<ip/domain>:<port> -w <word list location>`
+  
+**Flags**
+- `-e`	Print the full URLs in your console
+- `-u`	The target URL
+- `-w`	Path to your wordlist
+- `-U` and -P	Username and Password for Basic Auth
+- `-p` <x>	Proxy to use for requests
+- `-c` <http cookies>	Specify a cookie for simulating your auth
+  
 
 #### nikto
 Scan with nikto to check for missconfigurations: `nikto -h http://example.com`
