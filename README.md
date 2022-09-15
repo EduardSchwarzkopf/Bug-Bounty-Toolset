@@ -46,15 +46,15 @@
 3. scan specific ports `nmap -sV {target_ip} -p {port}`
 4. Check the service under the port via browser
 
-** nmap flag	Description **
--sV	Attempts to determine the version of the services running
--p <x> or -p-	Port scan for port <x> or scan all ports
--Pn	Disable host discovery and just scan for open ports
--A	Enables OS and version detection, executes in-build scripts for further enumeration 
--sC	Scan with the default nmap scripts
--v	Verbose mode
--sU	UDP port scan
--sS	TCP SYN port scan
+**nmap flag	Description**
+- `sV`	Attempts to determine the version of the services running
+- `p` <x> or -p-	Port scan for port <x> or scan all ports
+- `Pn`	Disable host discovery and just scan for open ports
+- `A`	Enables OS and version detection, executes in-build scripts for further enumeration 
+- `sC`	Scan with the default nmap scripts
+- `v`	Verbose mode
+- `sU`	UDP port scan
+- `sS`	TCP SYN port scan
 
 #### nikto
 Scan with nikto to check for missconfigurations: `nikto -h http://example.com`
