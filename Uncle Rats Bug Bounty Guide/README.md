@@ -64,3 +64,13 @@
 --- Get those invites private programs before you get cash
 -- private programs but first you need to get invites
 -- prigrams where syou can create or receive different users of different priviledge levels
+
+#### what to avoid when starting out
+- avoid high payouts, usually more hardened
+- avoid newspapers, usually very little functuanility
+- avoid banks, usually more hardened
+- avoid mobile, learn API testing first via web and then expand to mobile
+- avoid webshops unsless you are willing to spend money
+-- you need to test ALL the functionaility including buying, returning, ...
+- avoid programs that don't give you credentials and don't let you self registers
+- DO TAKE THESE BACKUP LATER WHEN YOU KNOW MORE
