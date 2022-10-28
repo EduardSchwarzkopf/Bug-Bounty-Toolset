@@ -28,3 +28,9 @@ https://codingo.io/tools/ffuf/bounty/2020/09/17/everything-you-need-to-know-abou
 
 ### File extensions
 `ffuf -u https://target.io/FUZZ -w ./wordlist -recursion -e .bak`
+
+## Silent Mode
+`ffuf -u https://target.io/FUZZ -w ./wordlist.txt -s | tee ./output.txt`
+
+This will output just the results and place them into a file, alternativly pipe the output directly into a program.
+
