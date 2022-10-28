@@ -34,3 +34,5 @@ https://codingo.io/tools/ffuf/bounty/2020/09/17/everything-you-need-to-know-abou
 
 This will output just the results and place them into a file, alternativly pipe the output directly into a program.
 
+## Slow down
+`-p` flag to slow down requests, check `-h` for more information
