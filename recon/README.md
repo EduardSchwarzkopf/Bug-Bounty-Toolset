@@ -16,3 +16,15 @@ Find subdomains with:
 Search engines to lookup history data of IPs, behind CDN:
 - https://search.censys.io
 - shodaon.i
+
+
+---
+## ffuf
+
+https://codingo.io/tools/ffuf/bounty/2020/09/17/everything-you-need-to-know-about-ffuf.html
+
+### Recursion
+`ffuf -u https://target.io/FUZZ -w ./wordlist -recursion`
+
+### File extensions
+`ffuf -u https://target.io/FUZZ -w ./wordlist -recursion -e .bak`
