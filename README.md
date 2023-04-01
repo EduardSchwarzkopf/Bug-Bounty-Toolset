@@ -47,7 +47,7 @@
 4. ping scan: `nmap -sn 192.168.1.0/24`
 5. top 20 ports (replace 20 with any number): `nmap --top-ports 20 {target_ip}`
 6. Getting the OS: `nmap -O {target_ip}`
-7. OS, Version, Trace: `nmap -A {target_ip}`
+7. Getting everyhting from target (OS, Version, Trace): `nmap -A {target_ip}`
 
 Check the service under the port via browser
 
