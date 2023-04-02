@@ -42,12 +42,13 @@
 
 #### nmap
 1. scan defaults: `nmap -sC -sV {target_ip}`
-2. scan all ports: `nmap -p- {target_ip}`
-3. scan specific ports `nmap -sV {target_ip} -p {port}`
-4. ping scan: `nmap -sn 192.168.1.0/24`
-5. top 20 ports (replace 20 with any number): `nmap --top-ports 20 {target_ip}`
-6. Getting the OS: `nmap -O {target_ip}`
-7. Getting everyhting from target (OS, Version, Trace): `nmap -A {target_ip}`
+2. decoy scan: `sudo nmap -sS -p {port} -D RND:{number of decoys} -e {interface} {target_ip}` 
+<br>e.g. `sudo nmap -sS -p80 -D RND:20 -e eth0 scanme.nmap.org`  
+4. scan specific ports `nmap -sV {target_ip} -p {port}`
+5. ping scan: `nmap -sn 192.168.1.0/24`
+6. top 20 ports (replace 20 with any number): `nmap --top-ports 20 {target_ip}`
+7. Getting the OS: `nmap -O {target_ip}`
+8. Getting everyhting from target (OS, Version, Trace): `nmap -A {target_ip}`
 
 **Usage of nmap scripts (It is noisy)**:
 Location: `/usr/share/nmap/scripts`
@@ -64,8 +65,6 @@ Common scripts:
 - `ssl-enum-ciphers` use with the `-p 443`: Get the TLS version (It is noisy, slow it down if you want to be under the radar)
 - `http-methods`: Get allowed HTTP Methods
 - `http-enum`: Find folders on the target
-
-Check the service under the port via browser
 
 **nmap flag	Description**
 - `sV`	Attempts to determine the version of the services running
