@@ -41,6 +41,10 @@
 ### scan target
 
 #### nmap
+
+![image](https://user-images.githubusercontent.com/48969167/229360585-e6770764-cda6-4530-8bba-13bb4e4bcb68.png)
+
+
 1. scan defaults: `nmap -sC -sV {target_ip}`
 2. decoy scan: `sudo nmap -sS -p {port} -D RND:{number of decoys} -e {interface} {target_ip}` 
 <br>e.g. `sudo nmap -sS -p80 -D RND:20 -e eth0 scanme.nmap.org`  
