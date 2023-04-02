@@ -49,6 +49,14 @@
 6. Getting the OS: `nmap -O {target_ip}`
 7. Getting everyhting from target (OS, Version, Trace): `nmap -A {target_ip}`
 
+Usage of nmap scripts (It is noisy):
+Location: `/usr/share/nmap/scripts`
+
+Usage:
+Run all test tagged as `default`: `nmap --script default {target_ip}`
+Run a single script: `nmap --script 'http-auth' {target_ip}`
+Run all http scripts: `nmap --script 'http-*' {target_ip}`
+
 Check the service under the port via browser
 
 **nmap flag	Description**
