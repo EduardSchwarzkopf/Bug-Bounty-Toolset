@@ -61,6 +61,7 @@ Usage:
 Common scripts:
 
 - `banner`: Get service banners from the services
+- `ssl-enum-ciphers` use with the `-p 443`: Get the TLS version (It is noisy, slow it down if you want to be under the radar)
 - `http-methods`: Get allowed HTTP Methods
 - `http-enum`: Find folders on the target
 
