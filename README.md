@@ -140,6 +140,13 @@ Review the results under **Alerts** tab. Select the alert and check the request 
 
 **Tip**: Import a request via cURL. Right click on a request in the network tab. Switch to Postman, click import -> Raw text and paste the cURL request in
 
+
+## reverse shell
+
+spawn a better shell in python:
+
+`$ python -c 'import pty; pty.spawn("/bin/bash")'`
+
 ## Test Flow
 
 - Opting in
