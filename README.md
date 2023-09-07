@@ -147,6 +147,10 @@ spawn a better shell in python:
 
 `$ python -c 'import pty; pty.spawn("/bin/bash")'`
 
+## Misc
+
+On Linux systems, the environmental variables for a process can often be found by looking in `/proc/self/environ`. 
+
 ## Test Flow
 
 - Opting in
