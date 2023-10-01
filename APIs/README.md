@@ -6,6 +6,8 @@
 
 #### Google Dorking
 
+Website: https://www.google.com/
+
 Straight up search on Google like
 
 `<target_name> api`
@@ -17,7 +19,7 @@ More specific searches:
 
 #### Github
 
-Website: https://www.google.com/
+Website: https://github.com/
 
 Again, do a direct search for the api:
 
@@ -57,4 +59,8 @@ Search for the Application Header:
 
 `"content-type: application/json" <target_name>`
 
+#### Wayback Machine
 
+Website: https://archive.org/web/
+
+Use the Wayback machine to search for the API docs of your target and check for old endpoints, that were implemented, but were simply removed from the docs, but still work
