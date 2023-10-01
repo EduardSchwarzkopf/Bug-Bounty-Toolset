@@ -45,23 +45,25 @@
 ![image](https://user-images.githubusercontent.com/48969167/229360585-e6770764-cda6-4530-8bba-13bb4e4bcb68.png)
 
 
-1. scan defaults: `nmap -sC -sV {target_ip}`
-2. decoy scan: `sudo nmap -sS -p {port} -D RND:{number of decoys} -e {interface} {target_ip}` 
+1. scan defaults: `nmap -sC -sV <target_ip>`
+2. decoy scan: `sudo nmap -sS -p {port} -D RND:{number of decoys} -e {interface} <target_ip>` 
 <br>e.g. `sudo nmap -sS -p80 -D RND:20 -e eth0 scanme.nmap.org`  
-4. scan specific ports `nmap -sV {target_ip} -p {port}`
+4. scan specific ports `nmap -sV <target_ip> -p {port}`
 5. ping scan: `nmap -sn 192.168.1.0/24`
-6. top 20 ports (replace 20 with any number): `nmap --top-ports 20 {target_ip}`
-7. Getting the OS: `nmap -O {target_ip}`
-8. Getting everyhting from target (OS, Version, Trace): `nmap -A {target_ip}`
+6. top 20 ports (replace 20 with any number): `nmap --top-ports 20 <target_ip>`
+7. Getting the OS: `nmap -O <target_ip>`
+8. Getting everyhting from target (OS, Version, Trace): `nmap -A <target_ip>`
+
+**Tip**: Use `nmap -sC -sV <target_ip>` first and then a full scan `nmap -p- <target_ip>` next.
 
 **Usage of nmap scripts (It is noisy)**:
 Location: `/usr/share/nmap/scripts`
 
 Usage:
 
-- Run all test tagged as `default`: `nmap --script default {target_ip}`
-- Run a single script: `nmap --script 'http-auth' {target_ip}`
-- Run all http scripts: `nmap --script 'http-*' {target_ip}`
+- Run all test tagged as `default`: `nmap --script default <target_ip>`
+- Run a single script: `nmap --script 'http-auth' <target_ip>`
+- Run all http scripts: `nmap --script 'http-*' <target_ip>`
 
 Common scripts:
 
@@ -122,7 +124,7 @@ Review the results under **Alerts** tab. Select the alert and check the request 
 #### amass -> get potential api entries
 
 1. get sources with: `amass enum -list`
-2. search with: `amass enum -d <target_domain/ip> | grep api`
+2. use it with: `amass enum -d <target_domain/ip> | grep api`
 
 #### gobuster -> directory brute force (non-api related)
 
